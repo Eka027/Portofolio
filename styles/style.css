@@ -59,16 +59,86 @@ a {
 }
 
 .btn {
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     background: white;
     border: 1.5px solid var(--borderColors);
     cursor: pointer;
     transition: .2s ease-in-out;
+    border-radius: 5px;
 }
 
 .btn:hover {
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
+
+/* Mode Malam */
+.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Warna elemen lainnya saat mode malam aktif */
+.dark-mode h1,  
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6, 
+.dark-mode strong {
+    color: #6e94da;
+}
+
+.dark-mode p, 
+.dark-mode span, 
+.dark-mode label, 
+.dark-mode input, 
+.dark-mode textarea, 
+.dark-mode li {
+    color: #a1bff3;
+}
+
+.dark-mode .service,
+.dark-mode .portofolio,
+.dark-mode .contact-item-icon {
+    background-color: #000000;
+    color: #f5eeee;
+}
+
+.dark-mode .btn {
+    background: #444;
+    color: #fff;
+}
+
+.dark-mode .btn:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 5px;
+}
+
+
+.dark-mode .logo {
+    background: #fdfcfc;
+ 
+}
+
+    
+/* Gaya Tombol Mode */
+#toggle-mode {
+    cursor: pointer;
+    background-color: var(--primaryIconColor);
+    color: white;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#toggle-mode:hover {
+    background-color: var(--primaryIconColorHover);
+}
+
+#toggle-mode, #resume-btn {
+    display: inline-block;
+    margin: 10px;
+}
+
 
 .section-title {
     margin: 1rem 0 4rem;
@@ -157,6 +227,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    border-radius: 50%;
 }
 
 .hero-name {
@@ -169,8 +240,14 @@ nav ul li a {
     color: var(--primaryIconColor);
 }
 
-.hero-right img {
-    width: 90%;
+.hero-right img { 
+    width: 480px; 
+    height: 480px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block;
+    margin: auto;
+    border: 5px solid var(--borderColors);
 }
 
 .hero-right {
