@@ -223,7 +223,7 @@ nav ul li a {
 }
 
 #hero {
-    height: 720px;
+    height: 750px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -241,13 +241,13 @@ nav ul li a {
 }
 
 .hero-right img { 
-    width: 480px; 
-    height: 480px; 
+    width: 350px; 
+    height: 350px; 
     border-radius: 50%; 
     object-fit: cover; 
     display: block;
     margin: auto;
-    border: 5px solid var(--borderColors);
+    border: 3.5px solid var(--borderColors);
 }
 
 .hero-right {
