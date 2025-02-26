@@ -241,8 +241,8 @@ nav ul li a {
 }
 
 .hero-right img { 
-    width: 350px; 
-    height: 350px; 
+    width: 275px; 
+    height: 275px; 
     border-radius: 50%; 
     object-fit: cover; 
     display: block;
